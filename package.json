@@ -1,0 +1,35 @@
+{
+  "name": "passport-jwt-token",
+  "version": "0.0.1",
+  "description": "Passport authentication strategy using JSON Web Tokens",
+  "main": "./lib",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec --require test/bootstrap test/*test.js",
+    "testcov": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/celomoth/passport-jwt-token.git"
+  },
+  "keywords": [
+    "Passport",
+    "Strategy",
+    "JSON",
+    "Web",
+    "Token",
+    "JWT"
+  ],
+  "author": "celomoth",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-passport-strategy": "^1.0.0",
+    "mocha": "^9.2.1",
+    "nyc": "^15.1.0",
+    "sinon": "^1.0.0"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^9.0.0",
+    "passport-strategy": "^1.0.0"
+  }
+}
